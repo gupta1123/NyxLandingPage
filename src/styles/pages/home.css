@@ -342,19 +342,12 @@ body::after {
   color: var(--rust)
 }
 
-.nav-cta {
-  font-family: var(--ff-m);
-  font-size: .7rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  background: var(--char);
-  color: var(--ivory);
-  border: none;
-  padding: .58rem 1.15rem;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background .2s
-}
+.nav-toggle{display:none;flex-direction:column;gap:6px;background:none;border:none;cursor:pointer;padding:.5rem;z-index:1000}
+.nav-toggle .bar{width:22px;height:1.5px;background:var(--char);transition:transform .3s,opacity .3s}
+.site-nav.nav-open .nav-toggle .bar:first-child{transform:translateY(7.5px) rotate(45deg)}
+.site-nav.nav-open .nav-toggle .bar:last-child{transform:translateY(-7.5px) rotate(-45deg)}
+
+.nav-cta{font-family:var(--ff-m);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:var(--char);color:var(--ivory);border:none;padding:.58rem 1.15rem;border-radius:3px;cursor:pointer;transition:background .2s}
 
 .nav-cta:hover {
   background: var(--rust-dk)
@@ -1850,147 +1843,99 @@ footer {
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:1080px) {
-  .ind-grid {
-    grid-template-columns: repeat(3, 1fr)
-  }
-
-  .why-grid {
-    grid-template-columns: 1fr 1fr
-  }
-
-  .stats-bar {
-    grid-template-columns: 1fr 1fr
-  }
-
-  .stat-cell:nth-child(2) {
-    border-right: none
-  }
-
-  .stat-cell:nth-child(3) {
-    border-top: 1px solid var(--line)
-  }
-
-  .stat-cell:nth-child(4) {
-    border-top: 1px solid var(--line);
-    border-right: none
-  }
+  .ind-grid { grid-template-columns: repeat(3, 1fr) }
+  .why-grid { grid-template-columns: 1fr 1fr }
+  .stats-bar { grid-template-columns: 1fr 1fr }
+  .stat-cell:nth-child(2) { border-right: none }
+  .stat-cell:nth-child(3) { border-top: 1px solid var(--line) }
+  .stat-cell:nth-child(4) { border-top: 1px solid var(--line); border-right: none }
 }
 
 @media(max-width:900px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 2.5rem
-  }
-
-  .hero-right {
-    max-width: 480px
-  }
-
-  .three-grid {
-    grid-template-columns: 1fr 1fr
-  }
-
-  .phi-inner {
-    grid-template-columns: 1fr;
-    gap: 2rem
-  }
-
-  .phi-left {
-    position: static
-  }
-
-  .dark-inner {
-    grid-template-columns: 1fr;
-    padding: 3.5rem 0;
-    gap: 2.5rem
-  }
-
-  .dark-card,
-  .cta-card {
-    padding: 2rem 1.4rem
-  }
-
-  .cta-inner {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    text-align: center
-  }
-
-  .cta-btns {
-    justify-content: center
-  }
-
-  .cta-sub {
-    margin: 0 auto
-  }
-
-  .cta-right {
-    text-align: left
-  }
-
-  .dark-right {
-    justify-content: flex-start
-  }
-
-  .wf-vis {
-    max-width: 100%
-  }
-
-  .brand-sub,
+  .nav-toggle { display: flex }
   .nav-links {
-    display: none
+    position: fixed;
+    inset: 0;
+    background: var(--ivory);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    z-index: 900;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity .3s, transform .3s;
   }
+  .site-nav.nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+  
+  .hero-inner { grid-template-columns: 1fr; gap: 3.5rem; text-align: center; padding-top: 2rem }
+  .h-ey { justify-content: center }
+  .h1 { font-size: clamp(2.5rem, 8vw, 3.5rem) }
+  .h-body { margin: 0 auto 1.75rem }
+  .trust-strip { justify-content: center }
+  .hero-right { margin: 0 auto; width: 100%; max-width: 540px }
+  
+  .three-grid { grid-template-columns: 1fr 1fr }
+  .phi-inner { grid-template-columns: 1fr; gap: 3rem }
+  .phi-left { position: static; text-align: center }
+  .phi-left .ssub { margin-left: auto; margin-right: auto }
+  
+  .dark-inner { grid-template-columns: 1fr; padding: 4rem 0; gap: 3.5rem; text-align: center }
+  .d-title, .d-sub { margin-left: auto; margin-right: auto }
+  .build-chips { justify-content: center }
+  .dark-right { justify-content: center }
+  .wf-vis { max-width: 400px; margin: 0 auto }
+  
+  .cta-inner { grid-template-columns: 1fr; gap: 3.5rem; text-align: center }
+  .cta-btns { justify-content: center }
+  .cta-sub { margin: 0 auto }
+  .cta-right { text-align: left; max-width: 460px; margin: 0 auto }
 }
 
 @media(max-width:680px) {
-  .three-grid {
-    grid-template-columns: 1fr
-  }
-
-  .ind-grid {
-    grid-template-columns: 1fr 1fr
-  }
-
-  .why-grid {
-    grid-template-columns: 1fr
-  }
-
-  .section {
-    padding: 3.8rem 0
-  }
-
-  .foot-grid {
-    grid-template-columns: 1fr
-  }
-
-  .foot-links {
-    display: none
-  }
-
-  .sp-stamps-grid {
-    grid-template-columns: 1fr 1fr
-  }
-
-  .sp-stamp-w {
-    grid-column: span 2
-  }
+  .stats-bar { grid-template-columns: 1fr }
+  .stat-cell { border-right: none; border-bottom: 1px solid var(--line); padding: 2rem 1.5rem }
+  .stat-cell:last-child { border-bottom: none }
+  
+  .three-grid { grid-template-columns: 1fr }
+  .svc-card { padding: 2.5rem 1.8rem }
+  
+  .ind-grid { grid-template-columns: 1fr 1fr }
+  .why-grid { grid-template-columns: 1fr }
+  .section { padding: 4.5rem 0 }
+  
+  .foot-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center }
+  .foot-links { justify-content: center; flex-wrap: wrap; gap: 2rem }
+  .foot-links-col { align-items: center }
+  .foot-bottom { justify-content: center; text-align: center; gap: 1rem }
 }
 
 @media(max-width:480px) {
-  .ind-grid {
-    grid-template-columns: 1fr
-  }
-
-  .h1 {
-    font-size: 2.5rem
-  }
+  .h1 { font-size: 2.3rem }
+  .hero { padding-top: 3rem }
+  
+  .prod-row { grid-template-columns: 1fr; gap: .5rem; padding: 1.5rem 1.3rem }
+  .prod-num { margin-bottom: .2rem }
+  .prod-arr { display: none }
+  
+  .sp-stamps-grid { grid-template-columns: 1fr }
+  .sp-stamp-w { grid-column: auto }
+  .sp-mn { font-size: 1.25rem }
+  .sp-ml { font-size: .5rem }
+  .ind-grid { grid-template-columns: 1fr }
 }
 
 @media(prefers-reduced-motion:reduce) {
-
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation: none !important;
     transition: none !important
   }
