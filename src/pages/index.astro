@@ -1,0 +1,593 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import '../styles/pages/home.css';
+---
+
+<MainLayout title="Nyx Solutions — AI Products & Software Systems" description="Nyx Solutions builds practical AI-powered products and software systems for organisations that want better operations.">
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="page-shell">
+
+    <!-- NAV -->
+    <nav class="site-nav" id="site-nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="/" class="brand">Nyx Solutions</a>
+          <ul class="nav-links">
+            <li><a href="/about">About</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <!-- left -->
+          <div>
+            <div class="h-ey"><span class="h-ey-line"></span>AI Products &amp; Software Systems</div>
+            <h1 class="h1">
+              <span class="blk">Software that makes</span>
+              <em>organisations</em>
+              <span class="blk">work better.</span>
+            </h1>
+            <p class="h-body">Nyx Solutions builds practical AI-powered products and software systems for organisations that want better operations, clearer workflows, and less manual chaos.</p>
+            <div class="trust-strip">
+              <span class="tp">Product-led thinking</span>
+              <span class="tp">Workflow-focused systems</span>
+              <span class="tp">AI where it creates real value</span>
+              <span class="tp">Built for real business needs</span>
+            </div>
+          </div>
+
+          <!-- RIGHT: STUDIO PULSE — typographic product directory + live feed -->
+          <div class="hero-right">
+            <div class="sp-wrap">
+
+              <!-- chrome -->
+              <div class="sp-chrome">
+                <div class="sp-dots-row">
+                  <div class="spd spd-r"></div><div class="spd spd-y"></div><div class="spd spd-g"></div>
+                </div>
+                <span class="sp-chrome-mid">Studio Pulse</span>
+                <div class="sp-live"><div class="sp-live-dot"></div>Live</div>
+              </div>
+
+              <!-- product stamps -->
+              <div class="sp-stamps-head">
+                <div class="sp-stamps-lbl">Products in deployment</div>
+                <div class="sp-stamps-grid">
+                  <div class="sp-stamp s1 sp-stamp-w">
+                    <div class="sn">01</div>
+                    <div class="sname">Hotel <em>Management</em></div>
+                    <div class="scat">Hospitality Ops</div>
+                  </div>
+                  <div class="sp-stamp s3">
+                    <div class="sn">03</div>
+                    <div class="sname">School <em>ERP</em></div>
+                    <div class="scat">Education Ops</div>
+                  </div>
+                  <div class="sp-stamp s2">
+                    <div class="sn">02</div>
+                    <div class="sname">Sales <em>Platform</em></div>
+                    <div class="scat">Field Operations</div>
+                  </div>
+                  <div class="sp-stamp s4">
+                    <div class="sn">04</div>
+                    <div class="sname"><em>Carpool</em> &amp; Admin</div>
+                    <div class="scat">Mobility</div>
+                  </div>
+                  <div class="sp-stamp s5">
+                    <div class="sn">05</div>
+                    <div class="sname">AI <em>Shoots</em></div>
+                    <div class="scat">Brand &amp; Creative</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- live feed -->
+              <div class="sp-feed-head">
+                <div class="sp-feed-lbl">Recent activity</div>
+                <div class="sp-feed-window" id="sp-feed"></div>
+              </div>
+
+              <!-- metrics -->
+              <div class="sp-metrics">
+                <div class="sp-metric">
+                  <div class="sp-mn"><span class="cnt" data-t="5">0</span><sup>+</sup></div>
+                  <div class="sp-ml">Products</div>
+                </div>
+                <div class="sp-metric">
+                  <div class="sp-mn"><span class="cnt" data-t="40">0</span><sup>+</sup></div>
+                  <div class="sp-ml">Organisations</div>
+                </div>
+                <div class="sp-metric">
+                  <div class="sp-mn"><span class="cnt" data-t="87">0</span><sup>%</sup></div>
+                  <div class="sp-ml">Efficiency gain</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TICKER -->
+    <div class="ticker-wrap">
+      <div class="ticker-inner">
+        <span class="ticker-item">Briefly Docs<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Sales Tracking Platform<span class="t-sep">◆</span></span>
+        <span class="ticker-item">School ERP<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Carpooling App + Admin Platform<span class="t-sep">◆</span></span>
+        <span class="ticker-item">AI-Powered Photoshoots<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Briefly Docs<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Sales Tracking Platform<span class="t-sep">◆</span></span>
+        <span class="ticker-item">School ERP<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Carpooling App + Admin Platform<span class="t-sep">◆</span></span>
+        <span class="ticker-item">AI-Powered Photoshoots<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Briefly Docs<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Sales Tracking Platform<span class="t-sep">◆</span></span>
+        <span class="ticker-item">School ERP<span class="t-sep">◆</span></span>
+        <span class="ticker-item">Carpooling App + Admin Platform<span class="t-sep">◆</span></span>
+        <span class="ticker-item">AI-Powered Photoshoots<span class="t-sep">◆</span></span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat-cell"><div class="stat-n"><span class="cnt" data-t="7">0</span><sup>+</sup></div><div class="stat-l">Live Products</div></div>
+      <div class="stat-cell"><div class="stat-n"><span class="cnt" data-t="40">0</span><sup>+</sup></div><div class="stat-l">Organisations Served</div></div>
+      <div class="stat-cell"><div class="stat-n"><span class="cnt" data-t="87">0</span><sup>%</sup></div><div class="stat-l">Avg Efficiency Gain</div></div>
+      <div class="stat-cell"><div class="stat-n"><span class="cnt" data-t="12">0</span><sup>×</sup></div><div class="stat-l">Faster Workflows</div></div>
+    </div>
+
+    <main>
+
+      <!-- WHAT WE DO -->
+      <section class="section" id="what-we-do">
+        <div class="container">
+          <div class="sh">
+            <span class="stag">What we do</span>
+            <h2 class="stitle rv">We build products and systems that improve how teams operate</h2>
+            <p class="ssub rv" style="--d:80ms">Some organisations need a focused product. Some need a custom internal system. Some need both.</p>
+          </div>
+          <div class="three-grid">
+            <article class="svc-card rv" style="--d:0ms">
+              <div class="svc-ico"><svg width="19" height="19" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"></rect><rect x="11" y="2" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"></rect><rect x="2" y="11" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5"></rect><path d="M14.5 11v7M11 14.5h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+              <h3>AI Products</h3>
+              <p>Purpose-built software products designed to solve recurring business problems across documents, workflows, field operations, education, mobility, and brand content.</p>
+            </article>
+            <article class="svc-card rv" style="--d:80ms">
+              <div class="svc-ico"><svg width="19" height="19" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"></circle><path d="M10 2v2.5M10 15.5V18M2 10h2.5M15.5 10H18M4.22 4.22l1.77 1.77M14.01 14.01l1.77 1.77M4.22 15.78l1.77-1.77M14.01 5.99l1.77-1.77" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+              <h3>Custom Solutions</h3>
+              <p>Tailored AI and software systems built around your workflows, your teams, and your operational realities — not a generic template.</p>
+            </article>
+            <article class="svc-card rv" style="--d:160ms">
+              <div class="svc-ico"><svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h10M2 15h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="16" cy="14" r="2.5" stroke="currentColor" stroke-width="1.5"></circle><path d="M16 11.5v2.5l1.2 1.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path></svg></div>
+              <h3>Workflow Transformation</h3>
+              <p>We help organisations move from fragmented tools and manual processes to connected systems that are easier to run, manage, and scale.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="section prod-section" id="products">
+        <div class="container">
+          <div class="sh">
+            <span class="stag">Our products</span>
+            <div class="sh-row">
+              <div>
+                <h2 class="stitle rv">Built around real business workflows</h2>
+                <p class="ssub rv" style="--d:80ms">Each product removes operational friction and makes day-to-day work easier to manage.</p>
+              </div>
+              <a class="btn-dark rv" style="--d:100ms" href="/products">View All<svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5h9M8 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+            </div>
+          </div>
+          <div class="prod-list">
+            <a href="/briefly-docs" class="prod-row rv" style="--d:0ms"><span class="prod-num">01</span><div class="prod-info"><strong>Briefly Docs</strong><span>Answers, search, and workflows across your business documents</span></div><span class="prod-arr"><svg width="16" height="16" viewBox="0 0 17 17" fill="none"><path d="M3 8.5h11M10 5l3.5 3.5L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+            <a href="/sales-tracking" class="prod-row rv" style="--d:55ms"><span class="prod-num">02</span><div class="prod-info"><strong>Sales Tracking Platform</strong><span>Built for field sales visibility and execution</span></div><span class="prod-arr"><svg width="16" height="16" viewBox="0 0 17 17" fill="none"><path d="M3 8.5h11M10 5l3.5 3.5L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+            <a href="/school-erp" class="prod-row rv" style="--d:110ms"><span class="prod-num">03</span><div class="prod-info"><strong>School ERP</strong><span>Simpler systems for smoother school operations</span></div><span class="prod-arr"><svg width="16" height="16" viewBox="0 0 17 17" fill="none"><path d="M3 8.5h11M10 5l3.5 3.5L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+            <a href="/carpooling-app" class="prod-row rv" style="--d:165ms"><span class="prod-num">04</span><div class="prod-info"><strong>Carpooling App + Admin Platform</strong><span>Mobility software built for coordination, control, and user experience</span></div><span class="prod-arr"><svg width="16" height="16" viewBox="0 0 17 17" fill="none"><path d="M3 8.5h11M10 5l3.5 3.5L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+            <a href="/ai-powered-photoshoots" class="prod-row rv" style="--d:220ms"><span class="prod-num">05</span><div class="prod-info"><strong>AI-Powered Photoshoots for Brands</strong><span>Brand visuals created faster with AI-powered creative systems</span></div><span class="prod-arr"><svg width="16" height="16" viewBox="0 0 17 17" fill="none"><path d="M3 8.5h11M10 5l3.5 3.5L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHILOSOPHY -->
+      <section class="section phi-section">
+        <div class="container">
+          <div class="phi-inner">
+            <div class="phi-left">
+              <span class="stag">Our philosophy</span>
+              <h2 class="stitle rv">We care about systems, not gimmicks</h2>
+              <p class="ssub rv" style="--d:80ms">Many AI solutions sound exciting but fail in actual usage — disconnected from workflows and hard to adopt. We take a different approach.</p>
+              <a class="btn-dark rv" style="--d:150ms;margin-top:1.4rem" href="/contact">Learn our approach</a>
+            </div>
+            <div class="phi-right">
+              <article class="phi-card rv" style="--d:0ms"><div class="phi-n">01</div><div><h3>Workflow-first</h3><p>We start with how work actually happens — before writing a single line of code.</p></div></article>
+              <article class="phi-card rv" style="--d:65ms"><div class="phi-n">02</div><div><h3>Useful intelligence</h3><p>We use AI where it genuinely helps teams move faster or work better — not as decoration.</p></div></article>
+              <article class="phi-card rv" style="--d:130ms"><div class="phi-n">03</div><div><h3>Product thinking</h3><p>We care about usability, clarity, maintainability, and long-term value.</p></div></article>
+              <article class="phi-card rv" style="--d:195ms"><div class="phi-n">04</div><div><h3>Operational relevance</h3><p>We build for real teams, real approvals, real exceptions, and real constraints.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DARK / CUSTOM -->
+      <section class="section dark-section" id="custom">
+        <div class="container">
+          <div class="dark-card">
+            <div class="dark-inner">
+              <div>
+                <span class="stag d-tag">Custom builds</span>
+                <h2 class="d-title rv">We also build <em>tailored</em> systems for clients</h2>
+                <p class="d-sub rv" style="--d:80ms">Alongside our own products, we work with clients to design and build custom software and AI systems based on workflows, industry needs, and growth stage.</p>
+                <div class="build-chips rv" style="--d:140ms">
+                  <span class="build-chip"><span class="chip-ico">◈</span>AI-assisted internal tools</span>
+                  <span class="build-chip"><span class="chip-ico">⬡</span>Workflow &amp; approval platforms</span>
+                  <span class="build-chip"><span class="chip-ico">▣</span>Operations dashboards</span>
+                  <span class="build-chip"><span class="chip-ico">◉</span>Document &amp; knowledge systems</span>
+                  <span class="build-chip"><span class="chip-ico">⬟</span>Industry-specific SaaS</span>
+                  <span class="build-chip"><span class="chip-ico">◫</span>Mobile &amp; web platforms</span>
+                  <span class="build-chip"><span class="chip-ico">◐</span>Brand content &amp; creative AI</span>
+                </div>
+                <a href="/contact" class="btn-light rv" style="--d:200ms;margin-top:1.8rem">Discuss Your Workflow<svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5h9M8 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+              </div>
+              <div class="dark-right">
+                <div class="wf-vis" id="wf-vis">
+                  <div class="wf-vis-label">How a custom build works</div>
+
+                  <div class="wf-row" id="wfr1">
+                    <div class="wf-node" id="wfn1">
+                      <span class="wf-node-ico">⬡</span>
+                      Your workflow
+                    </div>
+                    <div class="wf-conn" id="wfc1"><div class="wf-conn-fill"></div></div>
+                    <div class="wf-node" id="wfn2">
+                      <span class="wf-node-ico">◈</span>
+                      Map &amp; gaps
+                    </div>
+                  </div>
+
+                  <div class="wf-row" id="wfr2">
+                    <div class="wf-node" id="wfn3">
+                      <span class="wf-node-ico">▣</span>
+                      System design
+                    </div>
+                    <div class="wf-conn" id="wfc2"><div class="wf-conn-fill"></div></div>
+                    <div class="wf-node" id="wfn4">
+                      <span class="wf-node-ico">◐</span>
+                      Build &amp; test
+                    </div>
+                  </div>
+
+                  <div class="wf-row wf-last" id="wfr3">
+                    <div class="wf-node" id="wfn5">
+                      <span class="wf-node-ico">◉</span>
+                      Deploy live
+                    </div>
+                    <div class="wf-conn" id="wfc3"><div class="wf-conn-fill"></div></div>
+                    <div class="wf-nyx" id="wf-nyx">NYX</div>
+                  </div>
+
+                  <div class="wf-status" id="wf-status">
+                    <div class="wf-status-dot"></div>
+                    6–12 weeks · full handover included
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section cta-section" id="contact">
+        <div class="container">
+          <div class="cta-inner rv">
+            <div>
+              <span class="stag">Get started</span>
+              <h2 class="cta-title">If your organisation is outgrowing manual processes, <em>we should talk</em></h2>
+              <p class="cta-sub">We build products and systems for organisations that want software to be genuinely useful: easier to run, easier to trust, and aligned with how work gets done.</p>
+              <div class="cta-btns">
+                <a class="btn-dark lg" href="/contact">Discuss Your Workflow</a>
+                <a class="btn-ghost lg" href="/products">Our Products</a>
+              </div>
+            </div>
+            <div class="cta-right">
+              <ul class="cta-list">
+                <li class="cta-item">
+                  <div class="cta-item-ico">◈</div>
+                  <div class="cta-item-text"><strong>Product Thinking</strong>Every system we build is designed for clarity and long-term usability.</div>
+                </li>
+                <li class="cta-item">
+                  <div class="cta-item-ico">⬡</div>
+                  <div class="cta-item-text"><strong>AI Integration</strong>Practical AI that actually works within your existing operational constraints.</div>
+                </li>
+                <li class="cta-item">
+                  <div class="cta-item-ico">▣</div>
+                  <div class="cta-item-text"><strong>Full Handover</strong>You own the system. We provide full documentation and training.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="foot-grid">
+          <div>
+            <div class="foot-name">Nyx Solutions</div>
+            <div class="foot-tag">AI Products &amp; Custom Software</div>
+          </div>
+          <div class="foot-links">
+            <div class="foot-links-col">
+              <span class="foot-links-lbl">Company</span>
+              <a href="/about">About Us</a>
+              <a href="/about#how-we-work">Our Process</a>
+              <a href="/contact">Contact</a>
+            </div>
+            <div class="foot-links-col">
+              <span class="foot-links-lbl">Products</span>
+              <a href="/products">View All</a>
+              <a href="/briefly-docs">Briefly Docs</a>
+              <a href="/school-erp">School ERP</a>
+            </div>
+            <div class="foot-links-col">
+              <span class="foot-links-lbl">Solutions</span>
+              <a href="/#custom">Custom Builds</a>
+              <a href="/sales-tracking">Sales Platform</a>
+              <a href="/carpooling-app">Mobility</a>
+            </div>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <div class="foot-copy">© 2026 Nyx Solutions. All rights reserved.</div>
+          <div class="foot-copy">Built with product thinking.</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script is:inline>
+    /* BG — warm geometric grid, neutral, timeless */
+    (() => {
+      const c = document.getElementById('bg-canvas');
+      const ctx = c?.getContext('2d');
+      if (!c || !ctx) return;
+
+      let W, H, t = 0, mx = -9999, my = -9999, pts = [];
+      const COLS = 20;
+      const ROWS = 13;
+      const resize = () => {
+        W = c.width = innerWidth;
+        H = c.height = innerHeight;
+        pts = [];
+        const cw = W / COLS;
+        const ch = H / ROWS;
+        for (let r = 0; r <= ROWS; r++) {
+          for (let col = 0; col <= COLS; col++) {
+            pts.push({ x: col * cw, y: r * ch, ph: Math.random() * Math.PI * 2, sp: .003 + Math.random() * .005 });
+          }
+        }
+      };
+      const frame = () => {
+        t++;
+        ctx.clearRect(0, 0, W, H);
+        const cw = W / COLS;
+        const ch = H / ROWS;
+        ctx.lineWidth = .7;
+        for (let col = 1; col < COLS; col++) {
+          ctx.strokeStyle = 'rgba(162,100,60,0.046)';
+          ctx.beginPath();
+          ctx.moveTo(col * cw, 0);
+          ctx.lineTo(col * cw, H);
+          ctx.stroke();
+        }
+        for (let r = 1; r < ROWS; r++) {
+          ctx.strokeStyle = 'rgba(162,100,60,0.046)';
+          ctx.beginPath();
+          ctx.moveTo(0, r * ch);
+          ctx.lineTo(W, r * ch);
+          ctx.stroke();
+        }
+        pts.forEach(p => {
+          const breath = Math.sin(t * p.sp + p.ph);
+          const base = .065 + breath * .038;
+          const dx = mx - p.x;
+          const dy = my - p.y;
+          const d = Math.hypot(dx, dy);
+          const prox = Math.max(0, 1 - d / 200);
+          const alpha = base + prox * .22;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 1.35 + prox * 1.5, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(162,78,40,${alpha})`;
+          ctx.fill();
+        });
+        const b1x = W * (.13 + .06 * Math.sin(t * .0007));
+        const b1y = H * (.16 + .05 * Math.cos(t * .0009));
+        const g1 = ctx.createRadialGradient(b1x, b1y, 0, b1x, b1y, W * .24);
+        g1.addColorStop(0, 'rgba(200,135,75,0.054)');
+        g1.addColorStop(1, 'rgba(200,135,75,0)');
+        ctx.fillStyle = g1;
+        ctx.fillRect(0, 0, W, H);
+        const b2x = W * (.85 + .05 * Math.cos(t * .0006));
+        const b2y = H * (.76 + .06 * Math.sin(t * .0008));
+        const g2 = ctx.createRadialGradient(b2x, b2y, 0, b2x, b2y, W * .19);
+        g2.addColorStop(0, 'rgba(175,95,55,0.044)');
+        g2.addColorStop(1, 'rgba(175,95,55,0)');
+        ctx.fillStyle = g2;
+        ctx.fillRect(0, 0, W, H);
+        requestAnimationFrame(frame);
+      };
+      addEventListener('resize', resize);
+      addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+      resize();
+      frame();
+    })();
+
+    /* NAV */
+    (() => {
+      const nav = document.getElementById('site-nav');
+      if (!nav) return;
+      addEventListener('scroll', () => nav.classList.toggle('stuck', scrollY > 50), { passive: true });
+    })();
+
+    /* REVEALS */
+    (() => {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('on');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: .08, rootMargin: '0px 0px -3% 0px' });
+      document.querySelectorAll('.rv,.rv-fd').forEach(el => io.observe(el));
+    })();
+
+    /* COUNTERS */
+    (() => {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          const el = e.target;
+          const tgt = +el.dataset.t;
+          const t0 = performance.now();
+          const tick = now => {
+            const p = Math.min((now - t0) / 1500, 1);
+            const ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(ease * tgt);
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          io.unobserve(el);
+        });
+      }, { threshold: .5 });
+      document.querySelectorAll('.cnt').forEach(el => io.observe(el));
+    })();
+
+    /* STUDIO PULSE LIVE FEED */
+    (() => {
+      const feed = document.getElementById('sp-feed');
+      if (!feed) return;
+      const events = [
+        { t: '<strong>School ERP</strong> — 340 parent notices sent', c: '#4a7a46', a: 'just now' },
+        { t: '<strong>Sales Platform</strong> — Rajesh logged 14 field visits', c: '#3c5a8c', a: '2m ago' },
+        { t: '<strong>Hotel Management</strong> — Occupancy board synced across floors', c: '#a24a2a', a: '4m ago' },
+        { t: '<strong>Carpool Admin</strong> — 24 rides active, 96% on-time', c: '#6a3c8c', a: '6m ago' },
+        { t: '<strong>AI Photoshoots</strong> — Summer campaign assets ready', c: '#946a10', a: '9m ago' },
+        { t: '<strong>School ERP</strong> — Fee reminders sent to 48 families', c: '#4a7a46', a: '12m ago' },
+        { t: '<strong>Restaurant Ordering</strong> — Kitchen queue auto-prioritized', c: '#a24a2a', a: '14m ago' },
+        { t: '<strong>Sales Platform</strong> — Weekly leaderboard refreshed', c: '#3c5a8c', a: '18m ago' }
+      ];
+      let idx = 0;
+      let current = null;
+      const next = () => {
+        if (current) {
+          current.classList.remove('fi');
+          current.classList.add('fo');
+          const old = current;
+          setTimeout(() => {
+            if (old.parentNode) old.parentNode.removeChild(old);
+          }, 340);
+        }
+        const ev = events[idx % events.length];
+        idx++;
+        const el = document.createElement('div');
+        el.className = 'sp-feed-row';
+        el.innerHTML = `<div class="fd-dot" style="background:${ev.c}"></div><span class="fd-text">${ev.t}</span><span class="fd-ago">${ev.a}</span>`;
+        feed.appendChild(el);
+        requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('fi')));
+        current = el;
+      };
+      next();
+      setInterval(next, 3200);
+    })();
+
+    /* WORKFLOW ANIMATION */
+    (() => {
+      const vis = document.getElementById('wf-vis');
+      if (!vis) return;
+
+      const steps = [
+        { row: 'wfr1', nodes: ['wfn1', 'wfn2'], conn: 'wfc1', delay: 0 },
+        { row: 'wfr2', nodes: ['wfn3', 'wfn4'], conn: 'wfc2', delay: 400 },
+        { row: 'wfr3', nodes: ['wfn5'], conn: 'wfc3', delay: 800, nyx: true },
+      ];
+
+      let loopTimer;
+
+      const io = new IntersectionObserver(entries => {
+        if (!entries[0]?.isIntersecting) return;
+        io.disconnect();
+        runWorkflow();
+      }, { threshold: .3 });
+      io.observe(vis);
+
+      function resetWorkflow() {
+        document.querySelectorAll('.wf-row').forEach(el => el.classList.remove('wf-in'));
+        document.querySelectorAll('.wf-node').forEach(el => el.classList.remove('wf-active', 'wf-done'));
+        document.querySelectorAll('.wf-conn').forEach(el => el.classList.remove('wf-conn-active'));
+        document.getElementById('wf-nyx')?.classList.remove('wf-in');
+        document.getElementById('wf-status')?.classList.remove('wf-in');
+      }
+
+      function runWorkflow() {
+        clearTimeout(loopTimer);
+        resetWorkflow();
+
+        steps.forEach(step => {
+          setTimeout(() => {
+            document.getElementById(step.row)?.classList.add('wf-in');
+
+            setTimeout(() => {
+              const n1 = document.getElementById(step.nodes[0]);
+              n1?.classList.add('wf-active');
+
+              setTimeout(() => {
+                document.getElementById(step.conn)?.classList.add('wf-conn-active');
+
+                setTimeout(() => {
+                  n1?.classList.remove('wf-active');
+                  n1?.classList.add('wf-done');
+                  if (step.nyx) {
+                    document.getElementById('wf-nyx')?.classList.add('wf-in');
+                    document.getElementById('wf-status')?.classList.add('wf-in');
+                  } else {
+                    const n2 = document.getElementById(step.nodes[1]);
+                    n2?.classList.add('wf-active');
+                    setTimeout(() => {
+                      n2?.classList.remove('wf-active');
+                      n2?.classList.add('wf-done');
+                    }, 700);
+                  }
+                }, 600);
+              }, 300);
+            }, 200);
+          }, step.delay);
+        });
+
+        loopTimer = setTimeout(runWorkflow, 6000);
+      }
+    })();
+
+    /* SMOOTH SCROLL */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) {
+          e.preventDefault();
+          window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 76, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</MainLayout>
