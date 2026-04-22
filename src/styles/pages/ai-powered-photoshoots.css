@@ -47,11 +47,11 @@ nav.sc{padding-top:.6rem;padding-bottom:.6rem}
 .nc{font-size:.83rem;font-weight:600;padding:.46rem 1.15rem;border-radius:8px;background:var(--r500);color:#fff;text-decoration:none;transition:background .2s}
 .nc:hover{background:var(--r600)}
 
-/* TICKER */
+/* TICKER FIX */
 .tw{margin-top:63px;overflow:hidden;background:linear-gradient(90deg,#f3e6cf,#ecd8b8);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:.5rem 0}
-.tt{display:flex;white-space:nowrap;animation:ticker 30s linear infinite}
-.ti{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--r600);padding:0 2.2rem;flex-shrink:0}
-.ti::after{content:'·';margin-left:2.2rem;color:var(--r400)}
+.tt{display:flex;white-space:nowrap;width:max-content;animation:ticker 45s linear infinite;will-change:transform}
+.ti{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--r600);padding:0 2.2rem;flex-shrink:0;display:flex;align-items:center;gap:2.2rem}
+.ti::after{content:'·';color:var(--r400)}
 
 /* LAYOUT */
 .ct{max-width:1160px;margin:0 auto;padding:0 2.4rem}
@@ -303,7 +303,11 @@ footer{background:var(--dk2);color:rgba(255,255,255,.35);text-align:center;paddi
 footer strong{color:var(--r300);font-weight:500}
 
 @media(max-width:980px){
-  nav{padding:.9rem 1.5rem}.nls{display:none}
+  nav{padding:.2rem 1.4rem}
+  .nls,.nc{display:none!important}
+  /* No hamburger on mobile */
+  .nav-toggle{display:none!important}
+
   .hi,.ovi,.fr,.ug,.ffg{grid-template-columns:1fr;gap:2.5rem}
   .fr.rv .fcp,.fr.rv .fil{order:unset}
   .hws{grid-template-columns:1fr 1fr;gap:1.4rem}.hsc{display:none}
@@ -312,6 +316,17 @@ footer strong{color:var(--r300);font-weight:500}
   .fgg{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
-  .hws{grid-template-columns:1fr}.cc{padding:2.2rem 1.4rem}
+  nav{padding:.1rem 1rem}
+  .hero{padding:4.5rem 0 3rem;min-height:auto}
+  .hh{font-size:clamp(2.2rem,8vw,2.8rem)}
+  .hl{font-size:.95rem}
+  
+  .hws{grid-template-columns:1fr}.cc{padding:2.2rem 1.4rem;border-radius:20px}
   .fgg{grid-template-columns:1fr}.gg{grid-template-columns:repeat(2,1fr)}
+  .ss{grid-template-columns:1fr}
+  .si:not(:last-child)::after{display:none}
+  
+  .ct{width:min(1160px,calc(100vw - 2.4rem))}
+  .nw{width:min(820px,calc(100vw - 2.4rem))}
+  footer{padding:1.5rem 1.2rem}
 }

@@ -482,14 +482,59 @@ footer{background:var(--dark-bg);color:rgba(255,255,255,.35);text-align:center;p
 footer strong{color:var(--rust-300);font-weight:500}
 
 /* ── RESPONSIVE ── */
+/* ── TICKER FIX ── */
+.ticker-wrap{margin-top:63px;overflow:hidden;background:linear-gradient(90deg,#f3e6cf,#ecd8b8);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.5rem 0}
+.ticker{display:flex;width:max-content;white-space:nowrap;animation:ticker 32s linear infinite;will-change:transform}
+.ticker-item{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rust-600);padding:0 2.2rem;flex-shrink:0}
+.ticker-item::after{content:'·';margin-left:2.2rem;color:var(--rust-400)}
+
+/* ── RESPONSIVE ── */
 @media(max-width:980px){
-  nav{padding:.9rem 1.5rem}.nav-links{display:none}
-  .bd-hero__grid,.feat-row,.bd-audience__grid,.bd-problem__card{grid-template-columns:1fr}
-  .feat-row.reverse .feat-copy,.feat-row.reverse .feat-illu{order:unset}
-  .bd-how__steps{grid-template-columns:1fr 1fr;gap:1.4rem}.bd-step__connector{display:none}
-  .stats-strip{grid-template-columns:repeat(2,1fr)}
+  /* No hamburger on mobile — nav bar stays with back icon + logo */
+  .nav-toggle{display:none!important}
+  .nav-links{display:none!important}
+  .nav-cta{display:none}
+  nav{padding:.85rem 1.4rem}
+
+  /* Hero single column */
+  .bd-hero{padding:4.5rem 0 3rem}
+  .bd-hero__grid{grid-template-columns:1fr;gap:2.5rem}
   .demo-float-1,.demo-float-2{display:none}
+
+  /* Features */
+  .feat-row{grid-template-columns:1fr;gap:3rem;padding:3.5rem 0}
+  .feat-row.reverse .feat-copy,.feat-row.reverse .feat-illu{order:unset}
+
+  /* Problem card */
+  .bd-problem__card{grid-template-columns:1fr;gap:1.5rem;padding:2rem 1.8rem}
+
+  /* How it works 2-col */
+  .bd-how__steps{grid-template-columns:1fr 1fr;gap:1.4rem}
+  .bd-step__connector{display:none}
+
+  /* Audience */
+  .bd-audience__grid{grid-template-columns:1fr;gap:2.5rem}
+
+  /* Stats 2-col */
+  .stats-strip{grid-template-columns:repeat(2,1fr)}
 }
+
 @media(max-width:600px){
-  .bd-how__steps{grid-template-columns:1fr}.bd-cta__card{padding:2.2rem 1.4rem}
+  nav{padding:.8rem 1rem}
+  .bd-hero{padding:3.5rem 0 2rem}
+  .bd-hero__h1{font-size:clamp(2.2rem,8vw,2.8rem)}
+  .bd-hero__lead{font-size:.95rem}
+
+  .feat-row{padding:2.5rem 0;gap:2rem}
+  .bd-how__steps{grid-template-columns:1fr}
+  .stats-strip{grid-template-columns:1fr}
+  .stat-item:not(:last-child)::after{display:none}
+
+  .bd-cta__card{padding:2.5rem 1.5rem;border-radius:20px}
+  .bd-cta__card h2{font-size:1.5rem}
+
+  .container{padding:0 1.2rem}
+  .narrow{padding:0 1.2rem}
+  footer{padding:1.5rem 1.2rem}
 }
+

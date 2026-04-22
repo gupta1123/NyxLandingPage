@@ -5,29 +5,29 @@ import '../styles/pages/products.css';
 // No dynamic products array needed as the user provided hardcoded HTML with specific IDs for animations.
 ---
 
-<MainLayout title="Products | Nyx Solutions" description="Software shaped around real operational work.">
+<MainLayout title="Products | Nyx Solution" description="Software shaped around real operational work.">
   <div class="products-page">
     
     <!-- NAV -->
-    <nav>
+    <nav id="site-nav">
       <div class="container">
         <div class="nav-inner">
           <div style="display: flex; align-items: center; gap: 0.8rem;">
             <a href="/" class="back-link" title="Back to Home" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(162, 74, 42, 0.08); color: var(--rust); transition: all 0.2s ease;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
             </a>
-            <a href="/" class="brand">Nyx Solutions</a>
+            <a href="/" class="brand">Nyx Solution</a>
           </div>
           <ul class="nav-links">
-            <li><a href="#briefly-docs">Docs</a></li>
-            <li><a href="#sales-tracking">Sales</a></li>
+            <li><a href="#briefly-docs">Briefly Docs</a></li>
+            <li><a href="#briefly-social">Briefly Social</a></li>
+            <li><a href="#creative-ai">Shoots</a></li>
             <li><a href="#school-erp">School</a></li>
             <li><a href="#mobility">Carpool</a></li>
-            <li><a href="#creative-ai">Shoots</a></li>
-            <li><a href="#hotel">Hotel</a></li>
+            <li><a href="#sales-tracking">Sales</a></li>
             <li><a href="#restaurant">Restaurant</a></li>
+            <li><a href="#hotel">Hotel</a></li>
           </ul>
-
         </div>
       </div>
     </nav>
@@ -36,19 +36,21 @@ import '../styles/pages/products.css';
     <div class="ticker-wrap">
       <div class="ticker-inner">
         <span class="ti">Document Intelligence</span>
-        <span class="ti">Field Sales Tracking</span>
+        <span class="ti">Social Publishing</span>
+        <span class="ti">AI Photoshoots</span>
         <span class="ti">School ERP</span>
         <span class="ti">Carpooling Platform</span>
-        <span class="ti">AI Photoshoots</span>
-        <span class="ti">Hotel Management</span>
+        <span class="ti">Field Sales Tracking</span>
         <span class="ti">Restaurant Ordering</span>
+        <span class="ti">Hotel Management</span>
         <span class="ti">Document Intelligence</span>
-        <span class="ti">Field Sales Tracking</span>
+        <span class="ti">Social Publishing</span>
+        <span class="ti">AI Photoshoots</span>
         <span class="ti">School ERP</span>
         <span class="ti">Carpooling Platform</span>
-        <span class="ti">AI Photoshoots</span>
-        <span class="ti">Hotel Management</span>
+        <span class="ti">Field Sales Tracking</span>
         <span class="ti">Restaurant Ordering</span>
+        <span class="ti">Hotel Management</span>
       </div>
     </div>
 
@@ -65,7 +67,7 @@ import '../styles/pages/products.css';
               Software shaped around<br><em>real operational</em> work
             </h1>
             <p class="hero-lead" style="opacity:0;animation:fadeUp .75s .35s both">
-              Each product is purpose-built around a specific workflow — not a feature list. From documents to field sales, education to mobility, brand content, hospitality, and food service.
+              Each product is purpose-built around a specific workflow — not a feature list. From documents and social publishing to field sales, education, mobility, hospitality, and food service.
             </p>
           </div>
           <div class="hero-scroll" style="opacity:0;animation:fadeIn .7s .55s both">
@@ -74,7 +76,7 @@ import '../styles/pages/products.css';
           </div>
         </div>
         <div class="hero-badge" style="opacity:0;animation:fadeIn .7s .6s both">
-          <span class="badge-n">07</span>
+          <span class="badge-n">08</span>
           <span class="badge-l">products</span>
         </div>
       </div>
@@ -84,7 +86,7 @@ import '../styles/pages/products.css';
     <section class="products">
       <div class="container">
 
-        <!-- ══ 01: BRIEFLY DOCS ══ -->
+        <!-- ══ 01: BRIEFLY DOCS  ══ -->
         <article class="prod" id="briefly-docs">
           <div class="num-col">
             <span class="num-label">01</span>
@@ -136,195 +138,73 @@ import '../styles/pages/products.css';
           </div>
         </article>
 
-        <!-- ══ 02: SALES TRACKING ══ -->
-        <article class="prod alt" id="sales-tracking">
+        <!-- ══ 02: BRIEFLY SOCIAL ══ -->
+        <article class="prod alt" id="briefly-social">
           <div class="num-col">
             <span class="num-label">02</span>
             <div class="num-line"></div>
           </div>
           <div class="body">
             <div class="prod-header">
-              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 24l7-8 5 4 7-10 5 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="16" r="2" fill="currentColor"/><circle cx="16" cy="20" r="2" fill="currentColor"/><circle cx="23" cy="10" r="2" fill="currentColor"/></svg></div>
-              <span class="prod-tag">Field Operations</span>
+              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="18" rx="3" stroke="currentColor" stroke-width="1.6"></rect><path d="M9 12h14M9 16h10M9 20h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="25" cy="9" r="2.3" fill="currentColor"></circle></svg></div>
+              <span class="prod-tag">Social Content Ops</span>
             </div>
-            <h2 class="prod-name">Sales Tracking</h2>
-            <p class="prod-sub">Field sales management built for visibility</p>
-            <p class="prod-body">Built for organizations that need more than pipeline management. Track on-ground sales activity, monitor visits and performance, manage expenses, and improve accountability across your field team.</p>
-            <a href="/sales-tracking" class="prod-cta">
-              <span>Learn More</span>
-              <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <div class="vis">
-            <div class="vis-card vis-sales" id="sales-anim">
-              <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-                <rect width="360" height="270" fill="#f6f0e5"/>
-                <!-- road grid -->
-                <line x1="0" y1="70" x2="360" y2="70" stroke="#e2d5c4" stroke-width="7"/>
-                <line x1="0" y1="140" x2="360" y2="140" stroke="#e2d5c4" stroke-width="7"/>
-                <line x1="0" y1="210" x2="360" y2="210" stroke="#e2d5c4" stroke-width="7"/>
-                <line x1="80" y1="0" x2="80" y2="270" stroke="#e2d5c4" stroke-width="7"/>
-                <line x1="200" y1="0" x2="200" y2="270" stroke="#e2d5c4" stroke-width="7"/>
-                <line x1="300" y1="0" x2="300" y2="270" stroke="#e2d5c4" stroke-width="7"/>
-                <!-- blocks -->
-                <rect x="8" y="8" width="60" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
-                <rect x="90" y="8" width="98" height="50" rx="3" fill="#ede6d8" opacity=".6"/>
-                <rect x="208" y="8" width="80" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
-                <rect x="8" y="78" width="60" height="50" rx="3" fill="#ede6d8" opacity=".5"/>
-                <rect x="90" y="78" width="98" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
-                <rect x="208" y="78" width="80" height="50" rx="3" fill="#ede6d8" opacity=".6"/>
-                <rect x="8" y="148" width="60" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
-                <rect x="90" y="148" width="98" height="50" rx="3" fill="#ede6d8" opacity=".5"/>
-                <rect x="208" y="148" width="80" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
-                <!-- route trail -->
-                <polyline id="sales-trail" points="40,104 40,70 140,70 140,34 250,34 250,70 330,70 330,104 330,140 250,140 250,175 140,175 140,210 250,210" fill="none" stroke="#c0521f" stroke-width="2.5" stroke-dasharray="500" stroke-dashoffset="500" stroke-linecap="round" stroke-linejoin="round"/>
-                <!-- ripple rings -->
-                <circle cx="40" cy="104" r="9" fill="none" stroke="#c0521f" stroke-width="1.5" opacity="0" id="sr1"/>
-                <circle cx="140" cy="34" r="9" fill="none" stroke="#c0521f" stroke-width="1.5" opacity="0" id="sr2"/>
-                <circle cx="250" cy="70" r="9" fill="none" stroke="#2e8c4f" stroke-width="1.5" opacity="0" id="sr3"/>
-                <circle cx="330" cy="140" r="9" fill="none" stroke="#c0521f" stroke-width="1.5" opacity="0" id="sr4"/>
-                <circle cx="250" cy="210" r="9" fill="none" stroke="#c07820" stroke-width="1.5" opacity="0" id="sr5"/>
-                <!-- pins -->
-                <g opacity="0" id="sp1"><circle cx="40" cy="104" r="7" fill="#c0521f"/><circle cx="40" cy="104" r="3" fill="#fff"/></g>
-                <g opacity="0" id="sp2"><circle cx="140" cy="34" r="7" fill="#c0521f"/><circle cx="140" cy="34" r="3" fill="#fff"/></g>
-                <g opacity="0" id="sp3"><circle cx="250" cy="70" r="7" fill="#2e8c4f"/><circle cx="250" cy="70" r="3" fill="#fff"/></g>
-                <g opacity="0" id="sp4"><circle cx="330" cy="140" r="7" fill="#c0521f"/><circle cx="330" cy="140" r="3" fill="#fff"/></g>
-                <g opacity="0" id="sp5"><circle cx="250" cy="210" r="9" fill="#c07820"/><circle cx="250" cy="210" r="3.5" fill="#fff"/></g>
-                <!-- labels -->
-                <g opacity="0" id="sl1"><rect x="257" y="61" width="48" height="13" rx="6.5" fill="rgba(46,140,79,.9)"/><text x="281" y="71" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#fff" font-weight="600">Visited ✓</text></g>
-                <g opacity="0" id="sl2"><rect x="257" y="200" width="54" height="13" rx="6.5" fill="rgba(192,120,32,.92)"/><text x="284" y="210" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#fff" font-weight="600">En route…</text></g>
-                <!-- team count -->
-                <g opacity="0" id="sl3"><rect x="6" y="240" width="120" height="14" rx="7" fill="rgba(162,74,42,.12)" stroke="rgba(162,74,42,.3)" stroke-width=".8"/><text x="66" y="250" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#732e0c" font-weight="600">4 of 5 stops completed</text></g>
-              </svg>
-            </div>
-          </div>
-        </article>
-
-        <!-- ══ 03: SCHOOL ERP ══ -->
-        <article class="prod" id="school-erp">
-          <div class="num-col">
-            <span class="num-label">03</span>
-            <div class="num-line"></div>
-          </div>
-          <div class="body">
-            <div class="prod-header">
-              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4L3 10l13 6 13-6-13-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 13v7c0 2 4.5 5 10 5s10-3 10-5v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M27 10v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-              <span class="prod-tag">Education</span>
-            </div>
-            <h2 class="prod-name">School ERP</h2>
-            <p class="prod-sub">A better operating system for schools</p>
-            <p class="prod-body">Manage academic, administrative, and communication workflows through a platform designed to simplify day-to-day school operations from top to bottom — attendance, fees, notices, and more.</p>
-            <a href="/school-erp" class="prod-cta">
+            <h2 class="prod-name">Briefly Social</h2>
+            <p class="prod-sub">Create, edit, schedule, and publish social content from one workflow</p>
+            <p class="prod-body">Briefly Social helps teams create posts from real brand data, reuse templates, apply AI-assisted editing, schedule publishing across connected accounts, and organize campaigns without splitting work across separate tools.</p>
+            <a href="/briefly-social" class="prod-cta">
               <span>Learn More</span>
               <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
           <div class="vis">
             <div class="vis-card">
-              <div class="vis-school" id="school-anim">
-                <div class="vs-header">
-                  <span class="vs-title">Class 9B — Attendance · Today</span>
-                  <span class="vs-date">Mon, Apr 2025</span>
+              <div class="vis-social">
+                <div class="bs-head">
+                  <span class="bs-title">Briefly Social</span>
+                  <span class="bs-sync"><span class="bs-sync-dot"></span>Brand synced</span>
                 </div>
-                <div class="vs-grid" id="vs-grid">
-                  <!-- 28 cells, populated by JS -->
+                <div class="bs-composer">
+                  <div class="bs-chip-row">
+                    <span class="bs-chip bs-chip-strong">Template · Product launch</span>
+                    <span class="bs-chip">Instagram</span>
+                    <span class="bs-chip">LinkedIn</span>
+                  </div>
+                  <div class="bs-post-title">Summer campaign — launch sequence</div>
+                  <p class="bs-post-copy">Generate post drafts from approved product names, campaign details, offer timelines, and brand tone instead of rewriting every caption manually.</p>
+                  <div class="bs-copy-lines">
+                    <span style="width:92%"></span>
+                    <span style="width:84%"></span>
+                    <span style="width:68%"></span>
+                  </div>
                 </div>
-                <div class="vs-row" id="vsr1"><span class="vs-row-name">Rahul Mehta</span><span class="vs-row-stat">Present ✓</span></div>
-                <div class="vs-row" id="vsr2"><span class="vs-row-name">Priya Sharma</span><span class="vs-row-stat">Present ✓</span></div>
-                <div class="vs-row" id="vsr3" style="animation-delay:.1s"><span class="vs-row-name">Arjun Nair</span><span class="vs-row-stat" style="color:var(--rust)">Absent</span></div>
+                <div class="bs-grid">
+                  <div class="bs-panel">
+                    <div class="bs-panel-label">AI editing</div>
+                    <div class="bs-panel-value">Rewrite copy, adapt visuals, keep brand voice</div>
+                  </div>
+                  <div class="bs-panel">
+                    <div class="bs-panel-label">Scheduled</div>
+                    <div class="bs-panel-value">Thu · 7:30 PM · Auto-post to connected channels</div>
+                  </div>
+                  <div class="bs-panel bs-panel-wide">
+                    <div class="bs-panel-label">Campaign board</div>
+                    <div class="bs-campaign-row">
+                      <span class="bs-mini ok">12 posts planned</span>
+                      <span class="bs-mini">4 approved</span>
+                      <span class="bs-mini">2 live</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- ══ 04: CARPOOLING ══ -->
-        <article class="prod alt" id="mobility">
-          <div class="num-col">
-            <span class="num-label">04</span>
-            <div class="num-line"></div>
-          </div>
-          <div class="body">
-            <div class="prod-header">
-              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M6 18h20M8 18l2-6h12l2 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="22" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="22" cy="22" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 18v4h4M24 22h4v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-              <span class="prod-tag">Mobility</span>
-            </div>
-            <h2 class="prod-name">Carpooling App</h2>
-            <p class="prod-sub">Mobility technology with operational control</p>
-            <p class="prod-body">A rider-driver experience supported by a backend platform that gives operators the visibility and control needed to run the service effectively at scale — routing, tracking, and coordination in one system.</p>
-            <a href="/carpooling-app" class="prod-cta">
-              <span>Learn More</span>
-              <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <div class="vis">
-            <div class="vis-card vis-carpool" id="carpool-anim">
-              <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
-                <rect width="360" height="270" fill="#f6f0e5"/>
-                <!-- road -->
-                <rect x="0" y="118" width="360" height="34" fill="#e2d5c4"/>
-                <line x1="0" y1="135" x2="360" y2="135" stroke="#d4c4b0" stroke-width="1.5" stroke-dasharray="18 12"/>
-                <!-- buildings left -->
-                <rect x="12" y="60" width="35" height="58" rx="2" fill="#ede6d8" opacity=".8"/>
-                <rect x="22" y="72" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="34" y="72" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="22" y="86" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="34" y="86" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="55" y="80" width="52" height="38" rx="2" fill="#ede6d8" opacity=".7"/>
-                <rect x="65" y="90" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".5"/>
-                <rect x="80" y="90" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".5"/>
-                <!-- buildings right -->
-                <rect x="270" y="65" width="40" height="53" rx="2" fill="#ede6d8" opacity=".8"/>
-                <rect x="280" y="75" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="292" y="75" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="280" y="89" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
-                <rect x="315" y="78" width="36" height="40" rx="2" fill="#ede6d8" opacity=".7"/>
-                <!-- pickup pin (center) -->
-                <g id="pickup-pin">
-                  <circle cx="180" cy="115" r="8" fill="#c0521f" opacity=".15"/>
-                  <circle cx="180" cy="115" r="4" fill="#c0521f"/>
-                  <path d="M180 109v-22" stroke="#c0521f" stroke-width="1.5" stroke-dasharray="3 3" opacity=".5"/>
-                  <rect x="162" y="78" width="36" height="14" rx="7" fill="rgba(192,82,31,.9)"/>
-                  <text x="180" y="88" text-anchor="middle" font-size="7.5" font-family="Sora,sans-serif" fill="#fff" font-weight="600">Pickup</text>
-                </g>
-                <!-- Car 1 (from left) -->
-                <g id="car1">
-                  <!-- car body -->
-                  <rect x="30" y="122" width="38" height="18" rx="4" fill="#a24a2a"/>
-                  <rect x="34" y="118" width="26" height="10" rx="3" fill="#c56f45"/>
-                  <circle cx="37" cy="142" r="4" fill="#3a2a20"/><circle cx="37" cy="142" r="2" fill="#888"/>
-                  <circle cx="63" cy="142" r="4" fill="#3a2a20"/><circle cx="63" cy="142" r="2" fill="#888"/>
-                  <rect x="35" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
-                  <rect x="46" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
-                  <!-- headlight -->
-                  <rect x="68" y="125" width="6" height="4" rx="1" fill="rgba(255,230,150,.8)"/>
-                </g>
-                <!-- Car 2 (from right, slightly different) -->
-                <g id="car2">
-                  <rect x="292" y="122" width="38" height="18" rx="4" fill="#6b2a14"/>
-                  <rect x="300" y="118" width="26" height="10" rx="3" fill="#8f3e1d"/>
-                  <circle cx="297" cy="142" r="4" fill="#3a2a20"/><circle cx="297" cy="142" r="2" fill="#888"/>
-                  <circle cx="323" cy="142" r="4" fill="#3a2a20"/><circle cx="323" cy="142" r="2" fill="#888"/>
-                  <rect x="307" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
-                  <rect x="318" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
-                  <!-- tail light -->
-                  <rect x="286" y="125" width="6" height="4" rx="1" fill="rgba(255,100,80,.7)"/>
-                </g>
-                <!-- status chips -->
-                <g opacity="0" id="cstatus">
-                  <rect x="12" y="155" width="90" height="14" rx="7" fill="rgba(162,74,42,.12)" stroke="rgba(162,74,42,.3)" stroke-width=".8"/>
-                  <text x="57" y="165" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#732e0c" font-weight="600">2 riders · 4 min ETA</text>
-                  <rect x="258" y="155" width="90" height="14" rx="7" fill="rgba(46,140,79,.1)" stroke="rgba(46,140,79,.25)" stroke-width=".8"/>
-                  <text x="303" y="165" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#1c6535" font-weight="600">96% on-time today</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-        </article>
-
-        <!-- ══ 05: AI PHOTOSHOOTS ══ -->
+        <!-- ══ 03: AI PHOTOSHOOTS ══ -->
         <article class="prod" id="creative-ai">
           <div class="num-col">
-            <span class="num-label">05</span>
+            <span class="num-label">03</span>
             <div class="num-line"></div>
           </div>
           <div class="body">
@@ -426,56 +306,192 @@ import '../styles/pages/products.css';
           </div>
         </article>
 
-        <!-- ══ 06: HOTEL MANAGEMENT ══ -->
-        <article class="prod alt" id="hotel">
+        <!-- ══ 04: SCHOOL ERP  ══ -->
+        <article class="prod alt" id="school-erp">
           <div class="num-col">
-            <span class="num-label">06</span>
+            <span class="num-label">04</span>
             <div class="num-line"></div>
           </div>
           <div class="body">
             <div class="prod-header">
-              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><rect x="3" y="10" width="26" height="19" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M3 15h26" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 10V7a6 6 0 0112 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="9" y="19" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="18" y="19" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4"/></svg></div>
-              <span class="prod-tag">Hospitality</span>
+              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4L3 10l13 6 13-6-13-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 13v7c0 2 4.5 5 10 5s10-3 10-5v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M27 10v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+              <span class="prod-tag">Education</span>
             </div>
-            <h2 class="prod-name">Hotel Management</h2>
-            <p class="prod-sub">End-to-end room and property operations in one platform</p>
-            <p class="prod-body">Manage reservations, room assignments, check-ins, housekeeping schedules, guest profiles, and billing from a single unified dashboard — designed for front desk, operations, and management teams.</p>
-            <a href="/hotel-management" class="prod-cta">
+            <h2 class="prod-name">School ERP</h2>
+            <p class="prod-sub">A better operating system for schools</p>
+            <p class="prod-body">Manage academic, administrative, and communication workflows through a platform designed to simplify day-to-day school operations from top to bottom — attendance, fees, notices, and more.</p>
+            <a href="/school-erp" class="prod-cta">
               <span>Learn More</span>
               <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
           <div class="vis">
             <div class="vis-card">
-              <div class="vis-hotel" id="hotel-anim">
-                <div class="vh-header">
-                  <span class="vh-title">Room Status · Live Dashboard</span>
-                  <div class="vh-live"><div class="vh-live-dot"></div>Realtime</div>
+              <div class="vis-school" id="school-anim">
+                <div class="vs-header">
+                  <span class="vs-title">Class 9B — Attendance · Today</span>
+                  <span class="vs-date">Mon, Apr 2025</span>
                 </div>
-                <div class="vh-floor">
-                  <div class="vh-floor-label">Floor 1</div>
-                  <div class="vh-rooms" id="floor1"><!-- JS --></div>
+                <div class="vs-grid" id="vs-grid">
+                  <!-- 28 cells, populated by JS -->
                 </div>
-                <div class="vh-floor">
-                  <div class="vh-floor-label">Floor 2</div>
-                  <div class="vh-rooms" id="floor2"><!-- JS --></div>
-                </div>
-                <div class="vh-legend">
-                  <div class="vh-leg-item"><div class="vh-leg-dot" style="background:rgba(162,74,42,.16)"></div>Occupied</div>
-                  <div class="vh-leg-item"><div class="vh-leg-dot" style="background:rgba(46,140,79,.12)"></div>Available</div>
-                  <div class="vh-leg-item"><div class="vh-leg-dot" style="background:rgba(192,120,32,.1)"></div>Cleaning</div>
-                </div>
-                <div class="vh-stats">
-                  <div class="vh-stat"><div class="vh-stat-n" id="vh-occ">0</div><div class="vh-stat-l">Occupied</div></div>
-                  <div class="vh-stat"><div class="vh-stat-n" id="vh-free">0</div><div class="vh-stat-l">Available</div></div>
-                  <div class="vh-stat"><div class="vh-stat-n" id="vh-rev">₹0</div><div class="vh-stat-l">Today's Rev</div></div>
-                </div>
+                <div class="vs-row" id="vsr1"><span class="vs-row-name">Rahul Mehta</span><span class="vs-row-stat">Present ✓</span></div>
+                <div class="vs-row" id="vsr2"><span class="vs-row-name">Priya Sharma</span><span class="vs-row-stat">Present ✓</span></div>
+                <div class="vs-row" id="vsr3" style="animation-delay:.1s"><span class="vs-row-name">Arjun Nair</span><span class="vs-row-stat" style="color:var(--rust)">Absent</span></div>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- ══ 07: RESTAURANT ORDERING ══ -->
+        <!-- ══ 05: CARPOOLING  ══ -->
+        <article class="prod" id="mobility">
+          <div class="num-col">
+            <span class="num-label">05</span>
+            <div class="num-line"></div>
+          </div>
+          <div class="body">
+            <div class="prod-header">
+              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M6 18h20M8 18l2-6h12l2 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="22" r="2.5" stroke="currentColor" stroke-width="1.6"/><circle cx="22" cy="22" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 18v4h4M24 22h4v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+              <span class="prod-tag">Mobility</span>
+            </div>
+            <h2 class="prod-name">Carpooling App</h2>
+            <p class="prod-sub">Mobility technology with operational control</p>
+            <p class="prod-body">A rider-driver experience supported by a backend platform that gives operators the visibility and control needed to run the service effectively at scale — routing, tracking, and coordination in one system.</p>
+            <a href="/carpooling-app" class="prod-cta">
+              <span>Learn More</span>
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="vis">
+            <div class="vis-card vis-carpool" id="carpool-anim">
+              <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+                <rect width="360" height="270" fill="#f6f0e5"/>
+                <!-- road -->
+                <rect x="0" y="118" width="360" height="34" fill="#e2d5c4"/>
+                <line x1="0" y1="135" x2="360" y2="135" stroke="#d4c4b0" stroke-width="1.5" stroke-dasharray="18 12"/>
+                <!-- buildings left -->
+                <rect x="12" y="60" width="35" height="58" rx="2" fill="#ede6d8" opacity=".8"/>
+                <rect x="22" y="72" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="34" y="72" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="22" y="86" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="34" y="86" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="55" y="80" width="52" height="38" rx="2" fill="#ede6d8" opacity=".7"/>
+                <rect x="65" y="90" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".5"/>
+                <rect x="80" y="90" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".5"/>
+                <!-- buildings right -->
+                <rect x="270" y="65" width="40" height="53" rx="2" fill="#ede6d8" opacity=".8"/>
+                <rect x="280" y="75" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="292" y="75" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="280" y="89" width="8" height="8" rx="1" fill="#d4c0a8" opacity=".6"/>
+                <rect x="315" y="78" width="36" height="40" rx="2" fill="#ede6d8" opacity=".7"/>
+                <!-- pickup pin (center) -->
+                <g id="pickup-pin">
+                  <circle cx="180" cy="115" r="8" fill="#c0521f" opacity=".15"/>
+                  <circle cx="180" cy="115" r="4" fill="#c0521f"/>
+                  <path d="M180 109v-22" stroke="#c0521f" stroke-width="1.5" stroke-dasharray="3 3" opacity=".5"/>
+                  <rect x="162" y="78" width="36" height="14" rx="7" fill="rgba(192,82,31,.9)"/>
+                  <text x="180" y="88" text-anchor="middle" font-size="7.5" font-family="Sora,sans-serif" fill="#fff" font-weight="600">Pickup</text>
+                </g>
+                <!-- Car 1 (from left) -->
+                <g id="car1">
+                  <!-- car body -->
+                  <rect x="30" y="122" width="38" height="18" rx="4" fill="#a24a2a"/>
+                  <rect x="34" y="118" width="26" height="10" rx="3" fill="#c56f45"/>
+                  <circle cx="37" cy="142" r="4" fill="#3a2a20"/><circle cx="37" cy="142" r="2" fill="#888"/>
+                  <circle cx="63" cy="142" r="4" fill="#3a2a20"/><circle cx="63" cy="142" r="2" fill="#888"/>
+                  <rect x="35" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
+                  <rect x="46" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
+                  <!-- headlight -->
+                  <rect x="68" y="125" width="6" height="4" rx="1" fill="rgba(255,230,150,.8)"/>
+                </g>
+                <!-- Car 2 (from right, slightly different) -->
+                <g id="car2">
+                  <rect x="292" y="122" width="38" height="18" rx="4" fill="#6b2a14"/>
+                  <rect x="300" y="118" width="26" height="10" rx="3" fill="#8f3e1d"/>
+                  <circle cx="297" cy="142" r="4" fill="#3a2a20"/><circle cx="297" cy="142" r="2" fill="#888"/>
+                  <circle cx="323" cy="142" r="4" fill="#3a2a20"/><circle cx="323" cy="142" r="2" fill="#888"/>
+                  <rect x="307" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
+                  <rect x="318" y="121" width="8" height="6" rx="1.5" fill="rgba(255,240,200,.6)"/>
+                  <!-- tail light -->
+                  <rect x="286" y="125" width="6" height="4" rx="1" fill="rgba(255,100,80,.7)"/>
+                </g>
+                <!-- status chips -->
+                <g opacity="0" id="cstatus">
+                  <rect x="12" y="155" width="90" height="14" rx="7" fill="rgba(162,74,42,.12)" stroke="rgba(162,74,42,.3)" stroke-width=".8"/>
+                  <text x="57" y="165" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#732e0c" font-weight="600">2 riders · 4 min ETA</text>
+                  <rect x="258" y="155" width="90" height="14" rx="7" fill="rgba(46,140,79,.1)" stroke="rgba(46,140,79,.25)" stroke-width=".8"/>
+                  <text x="303" y="165" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#1c6535" font-weight="600">96% on-time today</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- ══ 06: SALES TRACKING  ══ -->
+        <article class="prod alt" id="sales-tracking">
+          <div class="num-col">
+            <span class="num-label">06</span>
+            <div class="num-line"></div>
+          </div>
+          <div class="body">
+            <div class="prod-header">
+              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M4 24l7-8 5 4 7-10 5 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="16" r="2" fill="currentColor"/><circle cx="16" cy="20" r="2" fill="currentColor"/><circle cx="23" cy="10" r="2" fill="currentColor"/></svg></div>
+              <span class="prod-tag">Field Operations</span>
+            </div>
+            <h2 class="prod-name">Sales Tracking</h2>
+            <p class="prod-sub">Field sales management built for visibility</p>
+            <p class="prod-body">Built for organizations that need more than pipeline management. Track on-ground sales activity, monitor visits and performance, manage expenses, and improve accountability across your field team.</p>
+            <a href="/sales-tracking" class="prod-cta">
+              <span>Learn More</span>
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="vis">
+            <div class="vis-card vis-sales" id="sales-anim">
+              <svg viewBox="0 0 360 270" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+                <rect width="360" height="270" fill="#f6f0e5"/>
+                <!-- road grid -->
+                <line x1="0" y1="70" x2="360" y2="70" stroke="#e2d5c4" stroke-width="7"/>
+                <line x1="0" y1="140" x2="360" y2="140" stroke="#e2d5c4" stroke-width="7"/>
+                <line x1="0" y1="210" x2="360" y2="210" stroke="#e2d5c4" stroke-width="7"/>
+                <line x1="80" y1="0" x2="80" y2="270" stroke="#e2d5c4" stroke-width="7"/>
+                <line x1="200" y1="0" x2="200" y2="270" stroke="#e2d5c4" stroke-width="7"/>
+                <line x1="300" y1="0" x2="300" y2="270" stroke="#e2d5c4" stroke-width="7"/>
+                <!-- blocks -->
+                <rect x="8" y="8" width="60" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
+                <rect x="90" y="8" width="98" height="50" rx="3" fill="#ede6d8" opacity=".6"/>
+                <rect x="208" y="8" width="80" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
+                <rect x="8" y="78" width="60" height="50" rx="3" fill="#ede6d8" opacity=".5"/>
+                <rect x="90" y="78" width="98" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
+                <rect x="208" y="78" width="80" height="50" rx="3" fill="#ede6d8" opacity=".6"/>
+                <rect x="8" y="148" width="60" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
+                <rect x="90" y="148" width="98" height="50" rx="3" fill="#ede6d8" opacity=".5"/>
+                <rect x="208" y="148" width="80" height="50" rx="3" fill="#ede6d8" opacity=".7"/>
+                <!-- route trail -->
+                <polyline id="sales-trail" points="40,104 40,70 140,70 140,34 250,34 250,70 330,70 330,104 330,140 250,140 250,175 140,175 140,210 250,210" fill="none" stroke="#c0521f" stroke-width="2.5" stroke-dasharray="500" stroke-dashoffset="500" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- ripple rings -->
+                <circle cx="40" cy="104" r="9" fill="none" stroke="#c0521f" stroke-width="1.5" opacity="0" id="sr1"/>
+                <circle cx="140" cy="34" r="9" fill="none" stroke="#c0521f" stroke-width="1.5" opacity="0" id="sr2"/>
+                <circle cx="250" cy="70" r="9" fill="none" stroke="#2e8c4f" stroke-width="1.5" opacity="0" id="sr3"/>
+                <circle cx="330" cy="140" r="9" fill="none" stroke="#c0521f" stroke-width="1.5" opacity="0" id="sr4"/>
+                <circle cx="250" cy="210" r="9" fill="none" stroke="#c07820" stroke-width="1.5" opacity="0" id="sr5"/>
+                <!-- pins -->
+                <g opacity="0" id="sp1"><circle cx="40" cy="104" r="7" fill="#c0521f"/><circle cx="40" cy="104" r="3" fill="#fff"/></g>
+                <g opacity="0" id="sp2"><circle cx="140" cy="34" r="7" fill="#c0521f"/><circle cx="140" cy="34" r="3" fill="#fff"/></g>
+                <g opacity="0" id="sp3"><circle cx="250" cy="70" r="7" fill="#2e8c4f"/><circle cx="250" cy="70" r="3" fill="#fff"/></g>
+                <g opacity="0" id="sp4"><circle cx="330" cy="140" r="7" fill="#c0521f"/><circle cx="330" cy="140" r="3" fill="#fff"/></g>
+                <g opacity="0" id="sp5"><circle cx="250" cy="210" r="9" fill="#c07820"/><circle cx="250" cy="210" r="3.5" fill="#fff"/></g>
+                <!-- labels -->
+                <g opacity="0" id="sl1"><rect x="257" y="61" width="48" height="13" rx="6.5" fill="rgba(46,140,79,.9)"/><text x="281" y="71" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#fff" font-weight="600">Visited ✓</text></g>
+                <g opacity="0" id="sl2"><rect x="257" y="200" width="54" height="13" rx="6.5" fill="rgba(192,120,32,.92)"/><text x="284" y="210" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#fff" font-weight="600">En route…</text></g>
+                <!-- team count -->
+                <g opacity="0" id="sl3"><rect x="6" y="240" width="120" height="14" rx="7" fill="rgba(162,74,42,.12)" stroke="rgba(162,74,42,.3)" stroke-width=".8"/><text x="66" y="250" text-anchor="middle" font-size="7" font-family="Sora,sans-serif" fill="#732e0c" font-weight="600">4 of 5 stops completed</text></g>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- ══ 07: RESTAURANT ORDERING  ══ -->
         <article class="prod" id="restaurant">
           <div class="num-col">
             <span class="num-label">07</span>
@@ -539,6 +555,55 @@ import '../styles/pages/products.css';
           </div>
         </article>
 
+        <!-- ══ 08: HOTEL MANAGEMENT  ══ -->
+        <article class="prod alt" id="hotel">
+          <div class="num-col">
+            <span class="num-label">08</span>
+            <div class="num-line"></div>
+          </div>
+          <div class="body">
+            <div class="prod-header">
+              <div class="prod-icon"><svg viewBox="0 0 32 32" fill="none"><rect x="3" y="10" width="26" height="19" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M3 15h26" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M10 10V7a6 6 0 0112 0v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="9" y="19" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4"/><rect x="18" y="19" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4"/></svg></div>
+              <span class="prod-tag">Hospitality</span>
+            </div>
+            <h2 class="prod-name">Hotel Management</h2>
+            <p class="prod-sub">End-to-end room and property operations in one platform</p>
+            <p class="prod-body">Manage reservations, room assignments, check-ins, housekeeping schedules, guest profiles, and billing from a single unified dashboard — designed for front desk, operations, and management teams.</p>
+            <a href="/hotel-management" class="prod-cta">
+              <span>Learn More</span>
+              <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="vis">
+            <div class="vis-card">
+              <div class="vis-hotel" id="hotel-anim">
+                <div class="vh-header">
+                  <span class="vh-title">Room Status · Live Dashboard</span>
+                  <div class="vh-live"><div class="vh-live-dot"></div>Realtime</div>
+                </div>
+                <div class="vh-floor">
+                  <div class="vh-floor-label">Floor 1</div>
+                  <div class="vh-rooms" id="floor1"><!-- JS --></div>
+                </div>
+                <div class="vh-floor">
+                  <div class="vh-floor-label">Floor 2</div>
+                  <div class="vh-rooms" id="floor2"><!-- JS --></div>
+                </div>
+                <div class="vh-legend">
+                  <div class="vh-leg-item"><div class="vh-leg-dot" style="background:rgba(162,74,42,.16)"></div>Occupied</div>
+                  <div class="vh-leg-item"><div class="vh-leg-dot" style="background:rgba(46,140,79,.12)"></div>Available</div>
+                  <div class="vh-leg-item"><div class="vh-leg-dot" style="background:rgba(192,120,32,.1)"></div>Cleaning</div>
+                </div>
+                <div class="vh-stats">
+                  <div class="vh-stat"><div class="vh-stat-n" id="vh-occ">0</div><div class="vh-stat-l">Occupied</div></div>
+                  <div class="vh-stat"><div class="vh-stat-n" id="vh-free">0</div><div class="vh-stat-l">Available</div></div>
+                  <div class="vh-stat"><div class="vh-stat-n" id="vh-rev">₹0</div><div class="vh-stat-l">Today's Rev</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -559,7 +624,7 @@ import '../styles/pages/products.css';
 
     <footer>
       <div class="container">
-        <p>&copy; 2026 <strong>Nyx Solutions</strong> — Software shaped around real operational work</p>
+        <p>&copy; 2026 <strong>Nyx Solution</strong> — Software shaped around real operational work</p>
       </div>
     </footer>
     
@@ -882,29 +947,12 @@ function initRest() {
 }
 
 /* ─── LEARN MORE LOADING STATE ─── */
-document.querySelectorAll('.prod-cta').forEach(link => {
-  link.addEventListener('click', event => {
-    if (
-      event.defaultPrevented ||
-      event.button !== 0 ||
-      event.metaKey ||
-      event.ctrlKey ||
-      event.shiftKey ||
-      event.altKey
-    ) return;
 
-    const href = link.getAttribute('href');
-    const label = link.querySelector('span');
-    if (!href || !label || link.classList.contains('is-loading')) return;
-
-    event.preventDefault();
-    link.classList.add('is-loading');
-    link.setAttribute('aria-busy', 'true');
-    label.textContent = 'Loading...';
-
-    setTimeout(() => {
-      window.location.href = href;
-    }, 120);
-  });
-});
+  // Mobile Nav
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('site-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => nav.classList.toggle('nav-open'));
+    nav.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => nav.classList.remove('nav-open')));
+  }
 </script>

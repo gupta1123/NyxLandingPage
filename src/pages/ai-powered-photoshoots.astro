@@ -2,13 +2,13 @@
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<MainLayout title="AI-Powered Photoshoots | Nyx Solutions" description="Upload your garment, pick a model, write a prompt — and get campaign-ready visuals in minutes.">
+<MainLayout title="AI-Powered Photoshoots | Nyx Solution" description="Upload your garment, pick a model, write a prompt — and get campaign-ready visuals in minutes.">
 <nav id="mainnav">
   <div class="nav-left">
     <a class="nav-back" href="/products" aria-label="Back to products">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
     </a>
-    <span class="nav-logo">Nyx Solutions</span>
+    <span class="nav-logo">Nyx Solution</span>
   </div>
   <ul class="nav-links">
     <li><a href="#how">How it works</a></li>
@@ -16,10 +16,24 @@ import MainLayout from '../layouts/MainLayout.astro';
     <li><a href="#model">Model</a></li>
     <li><a href="#output">Output</a></li>
   </ul>
+  <div class="nav-right">
+  </div>
 </nav>
 
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker">
+    <span class="ticker-item">Your garment · Our models</span>
+    <span class="ticker-item">Upload dress → pick model → write prompt → done</span>
+    <span class="ticker-item">Campaign quality. Zero studio.</span>
+    <span class="ticker-item">Instagram · Meta Ads · Catalog · Web</span>
+    <span class="ticker-item">Auto-detects garment type and style</span>
+    <span class="ticker-item">Any skin tone · Any setting · Any mood</span>
+    <span class="ticker-item">Your garment · Our models</span>
+    <span class="ticker-item">Upload dress → pick model → write prompt → done</span>
+    <span class="ticker-item">Campaign quality. Zero studio.</span>
+    <span class="ticker-item">Instagram · Meta Ads · Catalog · Web</span>
+    <span class="ticker-item">Auto-detects garment type and style</span>
+    <span class="ticker-item">Any skin tone · Any setting · Any mood</span>
     <span class="ticker-item">Your garment · Our models</span>
     <span class="ticker-item">Upload dress → pick model → write prompt → done</span>
     <span class="ticker-item">Campaign quality. Zero studio.</span>
@@ -541,7 +555,7 @@ import MainLayout from '../layouts/MainLayout.astro';
   </div>
 </section>
 
-<footer><p>&copy; 2026 <strong>Nyx Solutions</strong> · AI-Powered Photoshoots — Creative AI Product</p></footer>
+<footer><p>&copy; 2026 <strong>Nyx Solution</strong> · AI-Powered Photoshoots — Creative AI Product</p></footer>
 
 <script is:inline>
 /* ── NAV ── */
@@ -1094,7 +1108,10 @@ footer{background:var(--dark-bg);color:rgba(255,255,255,.35);text-align:center;p
 footer strong{color:var(--rust-300);font-weight:500}
 
 @media(max-width:980px){
-  nav{padding:.9rem 1.5rem}.nav-links{display:none}
+  nav{padding:.2rem 1.4rem}
+  .nav-toggle{display:none!important}
+  .nav-links{display:none!important}
+
   .bd-hero__grid,.overview-inner,.feat-row,.bd-audience__grid{grid-template-columns:1fr;gap:2.5rem}
   .feat-row.reverse .feat-copy,.feat-row.reverse .feat-illu{order:unset}
   .bd-how__steps{grid-template-columns:1fr 1fr;gap:1.4rem}.bd-step__connector{display:none}
@@ -1105,8 +1122,19 @@ footer strong{color:var(--rust-300);font-weight:500}
   .result-frame.main,.op-frame.main{grid-row:unset}
 }
 @media(max-width:600px){
+  nav{padding:.1rem 1rem}
+  .bd-hero{padding:4.5rem 0 3rem}
+  .bd-hero__h1{font-size:clamp(2.2rem,8vw,2.8rem)}
+  .bd-hero__lead{font-size:.95rem}
+
   .bd-how__steps{grid-template-columns:1fr}.bd-cta__card{padding:2.2rem 1.4rem}
   .feat-grid{grid-template-columns:1fr}.model-poses-row{grid-template-columns:1fr 1fr}
+  .stats-strip{grid-template-columns:1fr}
+  .stat-item:not(:last-child)::after{display:none}
+  
+  .container{width:min(1160px,calc(100vw - 2.4rem))}
+  .narrow{width:min(820px,calc(100vw - 2.4rem))}
+  footer{padding:1.5rem 1.2rem}
 }
 </style>
 </MainLayout>

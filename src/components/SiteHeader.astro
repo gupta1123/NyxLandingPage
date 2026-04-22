@@ -20,7 +20,7 @@ const isActive = (href: string) => currentPath === href;
 <header class:list={{ 'site-header': true, 'site-header--hero': variant === 'hero' }}>
   <div class="container">
     <nav class="top-nav" aria-label="Primary">
-      <a href="/" class="brand">Nyx Solutions</a>
+      <a href="/" class="brand">Nyx Solution</a>
       <div class="nav-links">
         {navItems.map((item) => (
           <a href={item.href} class:list={{ active: isActive(item.href) }}>{item.label}</a>

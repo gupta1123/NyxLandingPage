@@ -72,16 +72,9 @@ nav.scrolled{padding-top:.6rem;padding-bottom:.6rem}
 .nav-cta{font-size:.83rem;font-weight:600;padding:.46rem 1.15rem;border-radius:8px;background:var(--rust-500);color:#fff;text-decoration:none;transition:background .2s,transform .15s}
 .nav-cta:hover{background:var(--rust-600);transform:translateY(-1px)}
 
-/* ── TICKER ── */
-.ticker-wrap{
-  margin-top:63px;
-  overflow:hidden;
-  background:linear-gradient(90deg,#f3e6cf,#ecd8b8);
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  padding:.5rem 0
-}
-.ticker{display:flex;white-space:nowrap;animation:ticker 26s linear infinite}
+/* ── TICKER FIX ── */
+.ticker-wrap{margin-top:63px;overflow:hidden;background:linear-gradient(90deg,#f3e6cf,#ecd8b8);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.5rem 0}
+.ticker{display:flex;width:max-content;white-space:nowrap;animation:ticker 35s linear infinite;will-change:transform}
 .ticker-item{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--rust-600);padding:0 2.2rem;flex-shrink:0}
 .ticker-item::after{content:'·';margin-left:2.2rem;color:var(--rust-400)}
 
@@ -277,12 +270,27 @@ footer strong{color:var(--rust-300);font-weight:500}
 
 /* ── RESPONSIVE ── */
 @media(max-width:980px){
-  nav{padding:.9rem 1.5rem} .nav-links{display:none} section{padding:3.5rem 0}
+  /* No hamburger on mobile — nav bar stays with back icon + logo */
+  .nav-toggle{display:none!important}
+  .nav-links{display:none!important}
+  .nav-cta{display:none}
+  nav{padding:.85rem 1.4rem}
+
+  section{padding:3.5rem 0}
   .bd-hero__grid,.feat-row,.bd-audience__grid{grid-template-columns:1fr}
   .feat-row.reverse .feat-copy,.feat-row.reverse .feat-illu{order:unset}
   .bd-how__steps{grid-template-columns:1fr 1fr;gap:1.4rem} .bd-step__connector{display:none}
   .stats-strip{grid-template-columns:repeat(2,1fr)}
+  .h-badge--1,.h-badge--2{display:none}
 }
 @media(max-width:600px){
-  .bd-how__steps{grid-template-columns:1fr} .bd-cta__card{padding:2.2rem 1.4rem}
+  nav{padding:.8rem 1rem}
+  .bd-hero__h1{font-size:clamp(2.2rem,8vw,2.8rem)}
+  .bd-hero__lead{font-size:.95rem}
+  .stats-strip{grid-template-columns:1fr}
+  .stat-item:not(:last-child)::after{display:none}
+  .bd-how__steps{grid-template-columns:1fr}
+  .bd-cta__card{padding:2.2rem 1.4rem;border-radius:20px}
+  .container{padding:0 1.2rem}
+  .narrow{padding:0 1.2rem}
 }

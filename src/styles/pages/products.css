@@ -181,11 +181,34 @@
 .products-page .vb-result-label{font-family:var(--ff-m);font-size:.55rem;font-weight:600;color:#1c6535;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem}
 .products-page .vb-result-text{font-size:.72rem;font-weight:500;color:var(--char);line-height:1.4}
 
-/* ─ 2: SALES TRACKING ─ */
+/* ─ 2: BRIEFLY SOCIAL ─ */
+.products-page .vis-social{padding:1.2rem;display:flex;flex-direction:column;gap:.65rem}
+.products-page .bs-head{display:flex;align-items:center;justify-content:space-between}
+.products-page .bs-title{font-family:var(--ff-m);font-size:.65rem;font-weight:600;color:var(--ink)}
+.products-page .bs-sync{display:flex;align-items:center;gap:.32rem;font-family:var(--ff-m);font-size:.58rem;color:#7d4c91}
+.products-page .bs-sync-dot{width:5px;height:5px;border-radius:50%;background:#7d4c91;animation:ping 2s ease-in-out infinite}
+.products-page .bs-composer{background:rgba(255,255,255,.56);border:1px solid var(--line);border-radius:10px;padding:.7rem .8rem}
+.products-page .bs-chip-row{display:flex;flex-wrap:wrap;gap:.28rem;margin-bottom:.55rem}
+.products-page .bs-chip{font-family:var(--ff-m);font-size:.54rem;font-weight:600;color:var(--ink-lt);background:rgba(162,74,42,.06);border:1px solid rgba(162,74,42,.12);border-radius:999px;padding:.12rem .4rem}
+.products-page .bs-chip-strong{color:#7d4c91;background:rgba(125,76,145,.08);border-color:rgba(125,76,145,.15)}
+.products-page .bs-post-title{font-size:.82rem;font-weight:700;color:var(--char);margin-bottom:.3rem}
+.products-page .bs-post-copy{font-size:.7rem;line-height:1.6;color:var(--ink);margin-bottom:.55rem}
+.products-page .bs-copy-lines{display:grid;gap:.24rem}
+.products-page .bs-copy-lines span{display:block;height:5px;border-radius:99px;background:rgba(125,76,145,.12)}
+.products-page .bs-grid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem}
+.products-page .bs-panel{background:rgba(255,255,255,.5);border:1px solid var(--line);border-radius:8px;padding:.52rem .58rem}
+.products-page .bs-panel-wide{grid-column:1 / -1}
+.products-page .bs-panel-label{font-family:var(--ff-m);font-size:.52rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7d4c91;margin-bottom:.22rem}
+.products-page .bs-panel-value{font-size:.64rem;line-height:1.55;color:var(--ink)}
+.products-page .bs-campaign-row{display:flex;flex-wrap:wrap;gap:.3rem}
+.products-page .bs-mini{font-family:var(--ff-m);font-size:.54rem;font-weight:600;color:var(--ink-lt);background:rgba(162,74,42,.05);border:1px solid rgba(162,74,42,.1);border-radius:999px;padding:.12rem .4rem}
+.products-page .bs-mini.ok{color:#1c6535;background:rgba(46,140,79,.08);border-color:rgba(46,140,79,.16)}
+
+/* ─ 3: SALES TRACKING ─ */
 .products-page .vis-sales{padding:0;background:#f6f0e5;position:relative}
 .products-page .vis-sales svg{width:100%;height:100%;display:block}
 
-/* ─ 3: SCHOOL ERP ─ */
+/* ─ 4: SCHOOL ERP ─ */
 .products-page .vis-school{padding:1.2rem}
 .products-page .vs-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem}
 .products-page .vs-title{font-family:var(--ff-m);font-size:.65rem;font-weight:600;color:var(--ink)}
@@ -200,11 +223,11 @@
 .products-page .vs-row-name{font-size:.7rem;font-weight:500;color:var(--char)}
 .products-page .vs-row-stat{font-family:var(--ff-m);font-size:.62rem;color:var(--green);font-weight:600}
 
-/* ─ 4: CARPOOLING ─ */
+/* ─ 5: CARPOOLING ─ */
 .products-page .vis-carpool{padding:0;background:#f6f0e5;position:relative}
 .products-page .vis-carpool svg{width:100%;height:100%;display:block}
 
-/* ─ 5: AI PHOTOSHOOTS ─ */
+/* ─ 6: AI PHOTOSHOOTS ─ */
 .products-page .vis-photo{padding:1rem}
 .products-page .vp-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:.65rem}
 .products-page .vp-label{font-family:var(--ff-m);font-size:.6rem;font-weight:600;color:var(--ink)}
@@ -255,7 +278,7 @@
   background: rgba(46,140,79,.08) !important;
 }
 
-/* ─ 6: HOTEL ─ */
+/* ─ 7: HOTEL ─ */
 .products-page .vis-hotel{padding:1.2rem}
 .products-page .vh-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.65rem}
 .products-page .vh-title{font-family:var(--ff-m);font-size:.65rem;font-weight:600;color:var(--ink)}
@@ -276,7 +299,7 @@
 .products-page .vh-stat-n{font-family:var(--ff-d);font-size:1.3rem;font-style:italic;color:var(--rust);line-height:1}
 .products-page .vh-stat-l{font-family:var(--ff-m);font-size:.52rem;color:var(--ink-lt);text-transform:uppercase;letter-spacing:.08em}
 
-/* ─ 7: RESTAURANT ─ */
+/* ─ 8: RESTAURANT ─ */
 .products-page .vis-rest{padding:1.2rem;display:flex;flex-direction:column;gap:.55rem}
 .products-page .vr-header{display:flex;align-items:center;justify-content:space-between}
 .products-page .vr-title{font-family:var(--ff-m);font-size:.65rem;font-weight:600;color:var(--ink)}
@@ -314,18 +337,88 @@
 .products-page footer strong{color:rgba(218,149,106,.7)}
 
 /* ── RESPONSIVE ── */
+
+/* Ticker fix — must always be max-content wide or it stops */
+.products-page .ticker-inner{will-change:transform}
+
 @media(max-width:900px){
-  .products-page .nav-links{display:none}
-  .products-page .prod{grid-template-columns:44px 1fr;}
-  .products-page .prod .vis{grid-column:2;margin-top:2rem}
+  /* ── No hamburger on mobile ── */
+  .products-page .nav-toggle{display:none!important}
+  .products-page .nav-links{display:none!important}
+  .products-page .nav-right{display:none!important}
+
+  /* Nav bar itself stays — just brand + back arrow */
+  .products-page nav{padding:.85rem 1.2rem}
+
+  /* Hero: single column, tighter padding */
+  .products-page .hero{padding:4rem 0 2.5rem}
+  .products-page .hero-inner{grid-template-columns:1fr;gap:1.5rem}
+  .products-page .hero-scroll{display:none}
+  .products-page .hero-badge{top:auto;bottom:1.5rem;right:1rem;padding:.5rem .75rem}
+  .products-page .badge-n{font-size:1.8rem}
+
+  /* Products: number col + content, visual below */
+  .products-page .prod{
+    grid-template-columns:40px 1fr;
+    gap:0 1.5rem;
+    padding:3rem 0;
+  }
+  .products-page .prod .vis{
+    grid-column:2;
+    margin-top:1.8rem;
+    justify-content:flex-start;
+  }
   .products-page .prod.alt .body{order:unset}
   .products-page .prod.alt .vis{order:unset}
-  .products-page .hero-inner{grid-template-columns:1fr}
-  .products-page .hero-scroll{display:none}
+
+  /* Visual card full width on tablet */
+  .products-page .vis-card{max-width:100%}
+
+  /* CTA */
+  .products-page .cta-card{padding:2.5rem 1.8rem}
 }
+
 @media(max-width:600px){
-  .products-page .hero-h1{font-size:2.6rem}
-  .products-page .prod{grid-template-columns:1fr;}
+  /* Hero */
+  .products-page .hero{padding:3rem 0 2rem}
+  .products-page .hero-h1{font-size:clamp(2rem,8vw,2.6rem)}
+  .products-page .hero-lead{font-size:.92rem}
+  .products-page .hero-badge{display:none}
+
+  /* Products: fully single column, no number col */
+  .products-page .prod{
+    grid-template-columns:1fr;
+    padding:2.5rem 0;
+    gap:1.2rem;
+  }
   .products-page .num-col{display:none}
+  .products-page .prod .vis{
+    grid-column:1;
+    margin-top:0;
+  }
+  .products-page .prod.alt .body{order:unset}
+  .products-page .prod.alt .vis{order:unset}
+
+  /* Visual card: cap height on phones */
+  .products-page .vis-card{
+    max-width:100%;
+    aspect-ratio:16/10;
+  }
+
+  /* Product text */
+  .products-page .prod-name{font-size:1.8rem}
+  .products-page .prod-body{font-size:.9rem;max-width:none}
+
+  /* CTA */
+  .products-page .cta-card{padding:2rem 1.2rem;border-radius:18px}
+  .products-page .cta-card h2{font-size:1.4rem}
+
+  /* Container padding on small phones */
+  .products-page .container{width:calc(100vw - 2rem)}
+  .products-page .narrow{width:calc(100vw - 2rem)}
+
+  /* Footer */
+  .products-page footer{padding:1.5rem 1rem}
 }
+
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
